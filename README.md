@@ -6,3 +6,4 @@
 - Support CSS/SCSS
 - Have separate configurations for local development and production build  
   (for example, generate sourcermap files in local, but not generate them in production)
+- Use CSS Modules (with SCSS) but still can import SCSS globally
