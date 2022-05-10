@@ -21,7 +21,9 @@
   "homepage": "https://github.com/tranvanhuyhoang/Reactjs-from-scratch#readme",
   "dependencies": {
     "react": "^18.1.0",
-    "react-dom": "^18.1.0"
+    "react-dom": "^18.1.0",
+    "sass": "^1.51.0",
+    "sass-loader": "^12.6.0"
   },
   "devDependencies": {
     "@babel/core": "^7.17.10",
