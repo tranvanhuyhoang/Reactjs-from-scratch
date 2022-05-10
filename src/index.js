@@ -1,9 +1,15 @@
 import React from "react";
 import ReactDOM from "react-dom";
-class Welcome extends React.Component {
-  render() {
-    return <h1>Hello World from React boilerplate</h1>;
-  }
-}
-ReactDOM.render(<Welcome />, document.getElementById("root"));
 
+const container = document.getElementById("root");
+const root = ReactDOM.createRoot(container);
+
+function App() {
+  return (
+    <div>
+      <h1>Set up react with webpack và babel</h1>
+    </div>
+  );
+}
+
+root.render(<App />);
