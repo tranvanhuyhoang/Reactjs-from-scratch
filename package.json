@@ -3,6 +3,14 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browserslist": [
+    "defaults",
+    "not ie < 11",
+    "last 2 versions",
+    "> 1%",
+    "iOS 7",
+    "last 3 iOS versions"
+  ],
   "scripts": {
     "start": "webpack-dev-server --mode development --open --hot",
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -20,6 +28,7 @@
   },
   "homepage": "https://github.com/tranvanhuyhoang/Reactjs-from-scratch#readme",
   "dependencies": {
+    "autoprefixer": "^10.4.7",
     "classnames": "^2.3.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
@@ -33,6 +42,8 @@
     "babel-loader": "^8.2.5",
     "css-loader": "^6.7.1",
     "html-webpack-plugin": "^5.5.0",
+    "postcss": "^8.4.13",
+    "postcss-loader": "^6.2.1",
     "style-loader": "^3.3.1",
     "webpack": "^5.72.0",
     "webpack-cli": "^4.9.2",

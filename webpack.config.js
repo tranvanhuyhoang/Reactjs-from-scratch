@@ -16,17 +16,47 @@ module.exports = {
       },
       {
         test: /\.css$/, // Sử dụng style-loader, css-loader cho file .css
-        use: ["style-loader", "css-loader"],
+        use: ["style-loader", "css-loader",
+            {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "autoprefixer",
+                    {
+                      // Options
+                    },
+                  ],
+                ],
+              },
+            },],
       },
       {
         test: /\.s[ac]ss$/i,
         use: [
-          // Creates `style` nodes from JS strings
-          "style-loader",
-          // Translates CSS into CommonJS
-          "css-loader",
-          // Compiles Sass to CSS
-          "sass-loader",
+          { loader: "style-loader" }, //Creates `style` nodes from JS strings
+          {
+            loader: "css-loader", // Translates CSS into CommonJS
+            options: {
+              sourceMap: true,
+              modules: true,
+              localIdentName: "[local]_[hash:base64:5]",
+            },
+          },
+          {
+            loader: "postcss-loader",
+            options: {
+              sourceMap: true,
+              config: {
+                path: "postcss.config.js",
+              },
+            },
+          },
+          {
+            loader: "sass-loader", // Compiles Sass to CSS
+            options: { sourceMap: true },
+          },
         ],
       },
     ],
