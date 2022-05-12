@@ -4,6 +4,7 @@ import classnames from "classnames";
 import GlocalStyles from "./components/GlocalStyles";
 
 import styles from "./style.module.scss";
+// import "./stylecss.css";
 
 const container = document.getElementById("root");
 const root = ReactDOM.createRoot(container);

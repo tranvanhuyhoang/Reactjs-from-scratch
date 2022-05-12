@@ -1,0 +1,9 @@
+.wrapPage {
+    background: green;
+    color: #fff;
+    padding: 4px;
+}
+
+.wrapPage h1{
+  display: flex;
+}
